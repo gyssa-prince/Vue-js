@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeComp from '../components/HomeComp.vue'
-import DetailsComp from '../components/DetailsComp.vue'
+import AboutComp from '../components/AboutComp.vue'
+import JobsComp from '../components/jobs/JobsComp'
+import JobDetails from '../components/jobs/JobDetails'
 import NotFound from '../components/NotFound'
 
 const routes = [
@@ -10,13 +12,28 @@ const routes = [
     component: HomeComp
   },
   {
-    path: '/details/:id',
-    props:true,
-    name: 'Details',
+    path: '/about',
+    name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: DetailsComp
+    component: AboutComp
+  },
+  {
+      path:'/jobs',
+      name:'Jobs',
+      component:JobsComp
+  },
+  {
+      path:'/jobs/:id',
+      name:'JobDetails',
+      component:JobDetails,
+      props:true
+  },
+  //To redirect
+  {
+      path:'/all-jobs',
+      redirect:'jobs'
   },
   //To catch all
   {

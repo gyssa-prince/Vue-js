@@ -1,24 +1,14 @@
 {
-    "posts": [
+    "jobs": [
       {
         "id": 1,
-        "title": "welcome to the new blog",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "tags": [
-          "webdev",
-          "coding",
-          "news"
-        ]
+        "title": "Software Developer",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
         "id": 2,
-        "title": "top 5 CSS tips",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "tags": [
-          "css",
-          "webdev",
-          "coding"
-        ]
+        "title": "Network Administrator",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     ]
   }
